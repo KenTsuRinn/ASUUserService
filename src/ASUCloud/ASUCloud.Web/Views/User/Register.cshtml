@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "サインイン";
+    ViewData["Title"] = "アカウント登録";
 }
 
 
@@ -8,10 +8,14 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title text-center">ASUサービスにサインイン</h3>
+                    <h3 class="card-title text-center">ASUサービスのアカウントを作成</h3>
                 </div>
                 <div class="card-body">
                     <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">ユーザー名</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="nameHelp" required>
+                        </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">メールアドレス</label>
                             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
@@ -20,14 +24,18 @@
                             <label for="password" class="form-label">パスワード</label>
                             <input type="password" class="form-control" id="password" required>
                         </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">確認パスワード</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary">ログイン</button>
+                            <button type="submit" class="btn btn-primary">アカウント登録</button>
                         </div>
                     </form>
                 </div>
                 <div class="card-footer">
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="button" class="btn btn-link" onclick="location.href='@Url.Action("Register","User")'">アカウントを作成</button>
+                        <button type="button" class="btn btn-link" onclick="location.href='@Url.Action("Index","User")'">すでにアカウントをお持ちですか？</button>
                     </div>
                 </div>
             </div>
