@@ -21,7 +21,7 @@ namespace ASUCloud.Service.IntegratedTest
 
             UserRepository userRepository = new UserRepository(context);
             _userRepository = userRepository;
-            _userService = new UserService(userRepository);
+            _userService = new UserService(userRepository, EventBus.Instance.Subscribe());
         }
 
         [TestCleanup]
