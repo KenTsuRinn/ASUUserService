@@ -2242,3 +2242,457 @@ System.InvalidOperationException: The view 'Index' was not found. The following 
 2024-07-16 22:53:06.186 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 10.0234ms
 2024-07-16 22:53:06.191 +09:00 [DBG] Connection id "0HN55JQC3O078" completed keep alive response.
 2024-07-16 22:53:06.193 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.1293ms
+2024-07-16 23:01:46.777 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2024-07-16 23:01:46.799 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'.
+2024-07-16 23:01:46.801 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/User/Index.cshtml'.
+2024-07-16 23:01:46.802 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/User/Privacy.cshtml'.
+2024-07-16 23:01:46.802 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2024-07-16 23:01:46.803 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2024-07-16 23:01:46.804 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2024-07-16 23:01:46.821 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-07-16 23:01:46.859 +09:00 [DBG] Hosting starting
+2024-07-16 23:01:46.877 +09:00 [INF] User profile is available. Using 'C:\Users\kagak\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 23:01:46.881 +09:00 [DBG] Reading data from file 'C:\Users\kagak\AppData\Local\ASP.NET\DataProtection-Keys\key-b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06.xml'.
+2024-07-16 23:01:46.885 +09:00 [DBG] Found key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06}.
+2024-07-16 23:01:46.890 +09:00 [DBG] Considering key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06} with expiration date 2024-10-14 12:42:52Z as default key.
+2024-07-16 23:01:46.893 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 23:01:46.896 +09:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-07-16 23:01:46.898 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 23:01:46.900 +09:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-07-16 23:01:46.901 +09:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-07-16 23:01:46.902 +09:00 [DBG] Using key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06} as the default key.
+2024-07-16 23:01:46.903 +09:00 [DBG] Key ring with default key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06} was loaded during application startup.
+2024-07-16 23:01:46.964 +09:00 [INF] Now listening on: http://localhost:5175
+2024-07-16 23:01:46.966 +09:00 [DBG] Loaded hosting startup assembly ASUCloud.Web
+2024-07-16 23:01:46.967 +09:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-07-16 23:01:46.969 +09:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-07-16 23:01:46.970 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 23:01:46.971 +09:00 [INF] Hosting environment: Development
+2024-07-16 23:01:46.972 +09:00 [INF] Content root path: C:\Users\kagak\source\repos\ASUUserService\src\ASUCloud\ASUCloud.Web
+2024-07-16 23:01:46.973 +09:00 [DBG] Hosting started
+2024-07-16 23:01:47.289 +09:00 [DBG] Connection id "0HN55JVAH43AS" accepted.
+2024-07-16 23:01:47.303 +09:00 [DBG] Connection id "0HN55JVAH43AR" received FIN.
+2024-07-16 23:01:47.303 +09:00 [DBG] Connection id "0HN55JVAH43AS" received FIN.
+2024-07-16 23:01:47.289 +09:00 [DBG] Connection id "0HN55JVAH43AR" accepted.
+2024-07-16 23:01:47.330 +09:00 [DBG] Connection id "0HN55JVAH43AS" started.
+2024-07-16 23:01:47.347 +09:00 [DBG] Connection id "0HN55JVAH43AR" started.
+2024-07-16 23:01:47.375 +09:00 [DBG] Connection id "0HN55JVAH43AR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:01:47.375 +09:00 [DBG] Connection id "0HN55JVAH43AS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:01:47.385 +09:00 [DBG] Connection id "0HN55JVAH43AR" disconnecting.
+2024-07-16 23:01:47.387 +09:00 [DBG] Connection id "0HN55JVAH43AS" disconnecting.
+2024-07-16 23:01:47.395 +09:00 [DBG] Connection id "0HN55JVAH43AR" stopped.
+2024-07-16 23:01:47.395 +09:00 [DBG] Connection id "0HN55JVAH43AS" stopped.
+2024-07-16 23:01:48.107 +09:00 [DBG] Connection id "0HN55JVAH43AT" accepted.
+2024-07-16 23:01:48.108 +09:00 [DBG] Connection id "0HN55JVAH43AT" started.
+2024-07-16 23:01:48.109 +09:00 [DBG] Connection id "0HN55JVAH43AU" accepted.
+2024-07-16 23:01:48.110 +09:00 [DBG] Connection id "0HN55JVAH43AU" started.
+2024-07-16 23:01:48.130 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-07-16 23:01:48.199 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-07-16 23:01:48.203 +09:00 [DBG] The request path / does not match a supported file type
+2024-07-16 23:01:48.213 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2024-07-16 23:01:48.216 +09:00 [DBG] Endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)' with route pattern '{controller=User}/{action=Index}/{id?}' is valid for the request path '/'
+2024-07-16 23:01:48.217 +09:00 [DBG] Request matched endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)'
+2024-07-16 23:01:48.220 +09:00 [INF] Executing endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)'
+2024-07-16 23:01:48.242 +09:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASUCloud.Web.Controllers.UserController (ASUCloud.Web).
+2024-07-16 23:01:48.246 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-16 23:01:48.248 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-07-16 23:01:48.253 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2024-07-16 23:01:48.255 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-16 23:01:48.257 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-07-16 23:01:48.260 +09:00 [DBG] Executing controller factory for controller ASUCloud.Web.Controllers.UserController (ASUCloud.Web)
+2024-07-16 23:01:48.262 +09:00 [DBG] Executed controller factory for controller ASUCloud.Web.Controllers.UserController (ASUCloud.Web)
+2024-07-16 23:01:48.264 +09:00 [DBG] test for webapp
+2024-07-16 23:01:48.269 +09:00 [DBG] View lookup cache miss for view 'Index' in controller 'User'.
+2024-07-16 23:01:48.274 +09:00 [INF] Executing ViewResult, running view Index.
+2024-07-16 23:01:48.276 +09:00 [DBG] The view path '/Views/User/Index.cshtml' was found in 6.6194ms.
+2024-07-16 23:01:48.300 +09:00 [DBG] View lookup cache miss for view '_Layout' in controller 'User'.
+2024-07-16 23:01:48.325 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[User])
+2024-07-16 23:01:48.332 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in  and 
+2024-07-16 23:01:48.335 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /
+2024-07-16 23:01:48.337 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[User])
+2024-07-16 23:01:48.339 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in  and 
+2024-07-16 23:01:48.341 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /
+2024-07-16 23:01:48.345 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[User])
+2024-07-16 23:01:48.349 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in /User/Privacy and 
+2024-07-16 23:01:48.351 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /User/Privacy
+2024-07-16 23:01:48.352 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2024-07-16 23:01:48.355 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2024-07-16 23:01:48.356 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /Home/Privacy
+2024-07-16 23:01:48.368 +09:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-07-16 23:01:48.373 +09:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-07-16 23:01:48.381 +09:00 [INF] Executed ViewResult - view Index executed in 112.5932ms.
+2024-07-16 23:01:48.385 +09:00 [INF] Executed action ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web) in 126.1497ms
+2024-07-16 23:01:48.386 +09:00 [INF] Executed endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)'
+2024-07-16 23:01:48.388 +09:00 [INF] HTTP GET / responded 200 in 182.7869 ms
+2024-07-16 23:01:48.398 +09:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-07-16 23:01:48.400 +09:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-07-16 23:01:48.406 +09:00 [DBG] Connection id "0HN55JVAH43AT" completed keep alive response.
+2024-07-16 23:01:48.414 +09:00 [DBG] Connection id "0HN55JVAH43AV" accepted.
+2024-07-16 23:01:48.414 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 287.0404ms
+2024-07-16 23:01:48.451 +09:00 [DBG] Connection id "0HN55JVAH43AV" started.
+2024-07-16 23:01:48.428 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2024-07-16 23:01:48.452 +09:00 [DBG] Connection id "0HN55JVAH43B0" accepted.
+2024-07-16 23:01:48.461 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-16 23:01:48.468 +09:00 [DBG] Connection id "0HN55JVAH43B1" accepted.
+2024-07-16 23:01:48.462 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2024-07-16 23:01:48.475 +09:00 [DBG] Connection id "0HN55JVAH43B2" accepted.
+2024-07-16 23:01:48.475 +09:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2024-07-16 23:01:48.483 +09:00 [DBG] Connection id "0HN55JVAH43B2" started.
+2024-07-16 23:01:48.479 +09:00 [DBG] Connection id "0HN55JVAH43AT" completed keep alive response.
+2024-07-16 23:01:48.467 +09:00 [DBG] Connection id "0HN55JVAH43B0" started.
+2024-07-16 23:01:48.474 +09:00 [DBG] Connection id "0HN55JVAH43B1" started.
+2024-07-16 23:01:48.483 +09:00 [INF] The file /css/site.css was not modified
+2024-07-16 23:01:48.498 +09:00 [DBG] Handled. Status code: 304 File: /lib/bootstrap/dist/css/bootstrap.min.css
+2024-07-16 23:01:48.499 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2024-07-16 23:01:48.501 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 39.8053ms
+2024-07-16 23:01:48.509 +09:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2024-07-16 23:01:48.504 +09:00 [DBG] Handled. Status code: 304 File: /css/site.css
+2024-07-16 23:01:48.505 +09:00 [DBG] Connection id "0HN55JVAH43AU" completed keep alive response.
+2024-07-16 23:01:48.502 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ASUCloud.Web.styles.css?v=l-keKZqt0mub_0UpO4yZCdt2pvI9xxGiu5vw0j-rN7Q - null null
+2024-07-16 23:01:48.503 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/jquery/dist/jquery.min.js - null null
+2024-07-16 23:01:48.524 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2024-07-16 23:01:48.524 +09:00 [DBG] Handled. Status code: 304 File: /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+2024-07-16 23:01:48.525 +09:00 [DBG] Connection id "0HN55JVAH43AV" completed keep alive response.
+2024-07-16 23:01:48.528 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 100.3252ms
+2024-07-16 23:01:48.530 +09:00 [INF] The file /ASUCloud.Web.styles.css was not modified
+2024-07-16 23:01:48.532 +09:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2024-07-16 23:01:48.535 +09:00 [INF] The file /js/site.js was not modified
+2024-07-16 23:01:48.536 +09:00 [DBG] Connection id "0HN55JVAH43B2" completed keep alive response.
+2024-07-16 23:01:48.537 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 304 null text/css 74.9263ms
+2024-07-16 23:01:48.539 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-07-16 23:01:48.544 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 45.3757ms
+2024-07-16 23:01:48.543 +09:00 [DBG] Handled. Status code: 304 File: /js/site.js
+2024-07-16 23:01:48.540 +09:00 [DBG] Handled. Status code: 304 File: /ASUCloud.Web.styles.css
+2024-07-16 23:01:48.555 +09:00 [DBG] Connection id "0HN55JVAH43AT" completed keep alive response.
+2024-07-16 23:01:48.541 +09:00 [DBG] Handled. Status code: 304 File: /lib/jquery/dist/jquery.min.js
+2024-07-16 23:01:48.565 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 304 null text/javascript 41.0459ms
+2024-07-16 23:01:48.563 +09:00 [DBG] Connection id "0HN55JVAH43B0" completed keep alive response.
+2024-07-16 23:01:48.570 +09:00 [DBG] Connection id "0HN55JVAH43B1" completed keep alive response.
+2024-07-16 23:01:48.577 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ASUCloud.Web.styles.css?v=l-keKZqt0mub_0UpO4yZCdt2pvI9xxGiu5vw0j-rN7Q - 304 null text/css 75.5134ms
+2024-07-16 23:01:48.578 +09:00 [DBG] Connection id "0HN55JVAH43AU" completed keep alive response.
+2024-07-16 23:01:48.579 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/jquery/dist/jquery.min.js - 304 null text/javascript 75.9711ms
+2024-07-16 23:01:48.586 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.1248ms
+2024-07-16 23:01:50.390 +09:00 [DBG] Connection id "0HN55JVAH43AV" received FIN.
+2024-07-16 23:01:50.392 +09:00 [DBG] Connection id "0HN55JVAH43B2" received FIN.
+2024-07-16 23:01:50.393 +09:00 [DBG] Connection id "0HN55JVAH43AT" received FIN.
+2024-07-16 23:01:50.393 +09:00 [DBG] Connection id "0HN55JVAH43B1" received FIN.
+2024-07-16 23:01:50.393 +09:00 [DBG] Connection id "0HN55JVAH43AU" reset.
+2024-07-16 23:01:50.401 +09:00 [DBG] Connection id "0HN55JVAH43B1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:01:50.405 +09:00 [DBG] Connection id "0HN55JVAH43AU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:01:50.411 +09:00 [DBG] Connection id "0HN55JVAH43B1" disconnecting.
+2024-07-16 23:01:50.393 +09:00 [DBG] Connection id "0HN55JVAH43B0" reset.
+2024-07-16 23:01:50.396 +09:00 [DBG] Connection id "0HN55JVAH43B2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:01:50.416 +09:00 [DBG] Connection id "0HN55JVAH43AU" disconnecting.
+2024-07-16 23:01:50.418 +09:00 [DBG] Connection id "0HN55JVAH43B0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:01:50.397 +09:00 [DBG] Connection id "0HN55JVAH43AT" disconnecting.
+2024-07-16 23:01:50.395 +09:00 [DBG] Connection id "0HN55JVAH43AV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:01:50.418 +09:00 [DBG] Connection id "0HN55JVAH43B1" stopped.
+2024-07-16 23:01:50.419 +09:00 [DBG] Connection id "0HN55JVAH43B2" disconnecting.
+2024-07-16 23:01:50.420 +09:00 [DBG] Connection id "0HN55JVAH43AU" stopped.
+2024-07-16 23:01:50.420 +09:00 [DBG] Connection id "0HN55JVAH43B0" disconnecting.
+2024-07-16 23:01:50.422 +09:00 [DBG] Connection id "0HN55JVAH43AT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:01:50.423 +09:00 [DBG] Connection id "0HN55JVAH43AV" disconnecting.
+2024-07-16 23:01:50.424 +09:00 [DBG] Connection id "0HN55JVAH43B2" stopped.
+2024-07-16 23:01:50.426 +09:00 [DBG] Connection id "0HN55JVAH43B0" stopped.
+2024-07-16 23:01:50.427 +09:00 [DBG] Connection id "0HN55JVAH43AV" stopped.
+2024-07-16 23:01:50.436 +09:00 [DBG] Connection id "0HN55JVAH43AT" stopped.
+2024-07-16 23:02:14.634 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2024-07-16 23:02:14.659 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'.
+2024-07-16 23:02:14.660 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/User/Index.cshtml'.
+2024-07-16 23:02:14.660 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/User/Privacy.cshtml'.
+2024-07-16 23:02:14.661 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2024-07-16 23:02:14.662 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2024-07-16 23:02:14.663 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2024-07-16 23:02:14.669 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-07-16 23:02:14.716 +09:00 [DBG] Hosting starting
+2024-07-16 23:02:14.735 +09:00 [INF] User profile is available. Using 'C:\Users\kagak\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 23:02:14.740 +09:00 [DBG] Reading data from file 'C:\Users\kagak\AppData\Local\ASP.NET\DataProtection-Keys\key-b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06.xml'.
+2024-07-16 23:02:14.746 +09:00 [DBG] Found key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06}.
+2024-07-16 23:02:14.752 +09:00 [DBG] Considering key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06} with expiration date 2024-10-14 12:42:52Z as default key.
+2024-07-16 23:02:14.755 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 23:02:14.757 +09:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-07-16 23:02:14.759 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 23:02:14.762 +09:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-07-16 23:02:14.764 +09:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-07-16 23:02:14.765 +09:00 [DBG] Using key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06} as the default key.
+2024-07-16 23:02:14.767 +09:00 [DBG] Key ring with default key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06} was loaded during application startup.
+2024-07-16 23:02:14.832 +09:00 [INF] Now listening on: http://localhost:5175
+2024-07-16 23:02:14.834 +09:00 [DBG] Loaded hosting startup assembly ASUCloud.Web
+2024-07-16 23:02:14.835 +09:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-07-16 23:02:14.838 +09:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-07-16 23:02:14.842 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 23:02:14.844 +09:00 [INF] Hosting environment: Development
+2024-07-16 23:02:14.845 +09:00 [INF] Content root path: C:\Users\kagak\source\repos\ASUUserService\src\ASUCloud\ASUCloud.Web
+2024-07-16 23:02:14.846 +09:00 [DBG] Hosting started
+2024-07-16 23:02:15.272 +09:00 [DBG] Connection id "0HN55JVIS06BI" received FIN.
+2024-07-16 23:02:15.272 +09:00 [DBG] Connection id "0HN55JVIS06BH" received FIN.
+2024-07-16 23:02:15.285 +09:00 [DBG] Connection id "0HN55JVIS06BH" accepted.
+2024-07-16 23:02:15.285 +09:00 [DBG] Connection id "0HN55JVIS06BI" accepted.
+2024-07-16 23:02:15.288 +09:00 [DBG] Connection id "0HN55JVIS06BH" started.
+2024-07-16 23:02:15.291 +09:00 [DBG] Connection id "0HN55JVIS06BI" started.
+2024-07-16 23:02:15.300 +09:00 [DBG] Connection id "0HN55JVIS06BH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:02:15.300 +09:00 [DBG] Connection id "0HN55JVIS06BI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:02:15.306 +09:00 [DBG] Connection id "0HN55JVIS06BH" disconnecting.
+2024-07-16 23:02:15.307 +09:00 [DBG] Connection id "0HN55JVIS06BI" disconnecting.
+2024-07-16 23:02:15.311 +09:00 [DBG] Connection id "0HN55JVIS06BH" stopped.
+2024-07-16 23:02:15.311 +09:00 [DBG] Connection id "0HN55JVIS06BI" stopped.
+2024-07-16 23:02:16.097 +09:00 [DBG] Connection id "0HN55JVIS06BJ" accepted.
+2024-07-16 23:02:16.098 +09:00 [DBG] Connection id "0HN55JVIS06BJ" started.
+2024-07-16 23:02:16.105 +09:00 [DBG] Connection id "0HN55JVIS06BK" accepted.
+2024-07-16 23:02:16.106 +09:00 [DBG] Connection id "0HN55JVIS06BK" started.
+2024-07-16 23:02:16.118 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-07-16 23:02:16.189 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-07-16 23:02:16.195 +09:00 [DBG] The request path / does not match a supported file type
+2024-07-16 23:02:16.205 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2024-07-16 23:02:16.208 +09:00 [DBG] Endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)' with route pattern '{controller=User}/{action=Index}/{id?}' is valid for the request path '/'
+2024-07-16 23:02:16.210 +09:00 [DBG] Request matched endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)'
+2024-07-16 23:02:16.213 +09:00 [INF] Executing endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)'
+2024-07-16 23:02:16.235 +09:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASUCloud.Web.Controllers.UserController (ASUCloud.Web).
+2024-07-16 23:02:16.239 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-16 23:02:16.241 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-07-16 23:02:16.243 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2024-07-16 23:02:16.244 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-16 23:02:16.246 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-07-16 23:02:16.249 +09:00 [DBG] Executing controller factory for controller ASUCloud.Web.Controllers.UserController (ASUCloud.Web)
+2024-07-16 23:02:16.252 +09:00 [DBG] Executed controller factory for controller ASUCloud.Web.Controllers.UserController (ASUCloud.Web)
+2024-07-16 23:02:16.254 +09:00 [DBG] test for webapp
+2024-07-16 23:02:16.257 +09:00 [DBG] View lookup cache miss for view 'Index' in controller 'User'.
+2024-07-16 23:02:16.262 +09:00 [INF] Executing ViewResult, running view Index.
+2024-07-16 23:02:16.264 +09:00 [DBG] The view path '/Views/User/Index.cshtml' was found in 6.1092ms.
+2024-07-16 23:02:16.286 +09:00 [DBG] View lookup cache miss for view '_Layout' in controller 'User'.
+2024-07-16 23:02:16.308 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[User])
+2024-07-16 23:02:16.312 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in  and 
+2024-07-16 23:02:16.314 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /
+2024-07-16 23:02:16.318 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[User])
+2024-07-16 23:02:16.319 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in  and 
+2024-07-16 23:02:16.320 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /
+2024-07-16 23:02:16.322 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[User])
+2024-07-16 23:02:16.324 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in /User/Privacy and 
+2024-07-16 23:02:16.325 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /User/Privacy
+2024-07-16 23:02:16.327 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2024-07-16 23:02:16.328 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2024-07-16 23:02:16.330 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /Home/Privacy
+2024-07-16 23:02:16.337 +09:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-07-16 23:02:16.341 +09:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-07-16 23:02:16.345 +09:00 [INF] Executed ViewResult - view Index executed in 88.7857ms.
+2024-07-16 23:02:16.349 +09:00 [INF] Executed action ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web) in 101.0054ms
+2024-07-16 23:02:16.352 +09:00 [INF] Executed endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)'
+2024-07-16 23:02:16.355 +09:00 [INF] HTTP GET / responded 200 in 156.7889 ms
+2024-07-16 23:02:16.359 +09:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-07-16 23:02:16.360 +09:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-07-16 23:02:16.363 +09:00 [DBG] Connection id "0HN55JVIS06BJ" completed keep alive response.
+2024-07-16 23:02:16.364 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-16 23:02:16.372 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 257.2379ms
+2024-07-16 23:02:16.374 +09:00 [DBG] Connection id "0HN55JVIS06BK" completed keep alive response.
+2024-07-16 23:02:16.381 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 18.661ms
+2024-07-16 23:02:16.404 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-07-16 23:02:16.434 +09:00 [DBG] Connection id "0HN55JVIS06BK" completed keep alive response.
+2024-07-16 23:02:16.436 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.9749ms
+2024-07-16 23:02:18.229 +09:00 [DBG] Connection id "0HN55JVIS06BK" reset.
+2024-07-16 23:02:18.229 +09:00 [DBG] Connection id "0HN55JVIS06BJ" reset.
+2024-07-16 23:02:18.238 +09:00 [DBG] Connection id "0HN55JVIS06BK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:02:18.242 +09:00 [DBG] Connection id "0HN55JVIS06BJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:02:18.245 +09:00 [DBG] Connection id "0HN55JVIS06BK" disconnecting.
+2024-07-16 23:02:18.251 +09:00 [DBG] Connection id "0HN55JVIS06BJ" disconnecting.
+2024-07-16 23:02:18.253 +09:00 [DBG] Connection id "0HN55JVIS06BK" stopped.
+2024-07-16 23:02:18.254 +09:00 [DBG] Connection id "0HN55JVIS06BJ" stopped.
+2024-07-16 23:03:07.121 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2024-07-16 23:03:07.179 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'.
+2024-07-16 23:03:07.188 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/User/Index.cshtml'.
+2024-07-16 23:03:07.205 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/User/Privacy.cshtml'.
+2024-07-16 23:03:07.220 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2024-07-16 23:03:07.227 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2024-07-16 23:03:07.230 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2024-07-16 23:03:07.241 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-07-16 23:03:07.284 +09:00 [DBG] Hosting starting
+2024-07-16 23:03:07.301 +09:00 [INF] User profile is available. Using 'C:\Users\kagak\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 23:03:07.305 +09:00 [DBG] Reading data from file 'C:\Users\kagak\AppData\Local\ASP.NET\DataProtection-Keys\key-b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06.xml'.
+2024-07-16 23:03:07.312 +09:00 [DBG] Found key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06}.
+2024-07-16 23:03:07.318 +09:00 [DBG] Considering key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06} with expiration date 2024-10-14 12:42:52Z as default key.
+2024-07-16 23:03:07.320 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 23:03:07.333 +09:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-07-16 23:03:07.335 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 23:03:07.338 +09:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-07-16 23:03:07.340 +09:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-07-16 23:03:07.343 +09:00 [DBG] Using key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06} as the default key.
+2024-07-16 23:03:07.345 +09:00 [DBG] Key ring with default key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06} was loaded during application startup.
+2024-07-16 23:03:07.407 +09:00 [INF] Now listening on: http://localhost:5175
+2024-07-16 23:03:07.408 +09:00 [DBG] Loaded hosting startup assembly ASUCloud.Web
+2024-07-16 23:03:07.409 +09:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-07-16 23:03:07.409 +09:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-07-16 23:03:07.410 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 23:03:07.411 +09:00 [INF] Hosting environment: Development
+2024-07-16 23:03:07.411 +09:00 [INF] Content root path: C:\Users\kagak\source\repos\ASUUserService\src\ASUCloud\ASUCloud.Web
+2024-07-16 23:03:07.412 +09:00 [DBG] Hosting started
+2024-07-16 23:03:07.711 +09:00 [DBG] Connection id "0HN55K02G377G" accepted.
+2024-07-16 23:03:07.726 +09:00 [DBG] Connection id "0HN55K02G377H" received FIN.
+2024-07-16 23:03:07.726 +09:00 [DBG] Connection id "0HN55K02G377G" received FIN.
+2024-07-16 23:03:07.713 +09:00 [DBG] Connection id "0HN55K02G377H" accepted.
+2024-07-16 23:03:07.738 +09:00 [DBG] Connection id "0HN55K02G377G" started.
+2024-07-16 23:03:07.742 +09:00 [DBG] Connection id "0HN55K02G377H" started.
+2024-07-16 23:03:07.750 +09:00 [DBG] Connection id "0HN55K02G377G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:03:07.750 +09:00 [DBG] Connection id "0HN55K02G377H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:03:07.755 +09:00 [DBG] Connection id "0HN55K02G377G" disconnecting.
+2024-07-16 23:03:07.755 +09:00 [DBG] Connection id "0HN55K02G377H" disconnecting.
+2024-07-16 23:03:07.758 +09:00 [DBG] Connection id "0HN55K02G377G" stopped.
+2024-07-16 23:03:07.758 +09:00 [DBG] Connection id "0HN55K02G377H" stopped.
+2024-07-16 23:03:08.735 +09:00 [DBG] Connection id "0HN55K02G377I" accepted.
+2024-07-16 23:03:08.737 +09:00 [DBG] Connection id "0HN55K02G377I" started.
+2024-07-16 23:03:08.753 +09:00 [DBG] Connection id "0HN55K02G377J" accepted.
+2024-07-16 23:03:08.755 +09:00 [DBG] Connection id "0HN55K02G377J" started.
+2024-07-16 23:03:08.758 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-07-16 23:03:08.836 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-07-16 23:03:08.841 +09:00 [DBG] The request path / does not match a supported file type
+2024-07-16 23:03:08.854 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2024-07-16 23:03:08.857 +09:00 [DBG] Endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)' with route pattern '{controller=User}/{action=Index}/{id?}' is valid for the request path '/'
+2024-07-16 23:03:08.860 +09:00 [DBG] Request matched endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)'
+2024-07-16 23:03:08.862 +09:00 [INF] Executing endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)'
+2024-07-16 23:03:08.884 +09:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASUCloud.Web.Controllers.UserController (ASUCloud.Web).
+2024-07-16 23:03:08.888 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-16 23:03:08.889 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-07-16 23:03:08.892 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2024-07-16 23:03:08.893 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-16 23:03:08.895 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-07-16 23:03:08.897 +09:00 [DBG] Executing controller factory for controller ASUCloud.Web.Controllers.UserController (ASUCloud.Web)
+2024-07-16 23:03:08.900 +09:00 [DBG] Executed controller factory for controller ASUCloud.Web.Controllers.UserController (ASUCloud.Web)
+2024-07-16 23:03:08.902 +09:00 [DBG] test for webapp
+2024-07-16 23:03:08.905 +09:00 [DBG] View lookup cache miss for view 'Index' in controller 'User'.
+2024-07-16 23:03:08.909 +09:00 [INF] Executing ViewResult, running view Index.
+2024-07-16 23:03:08.912 +09:00 [DBG] The view path '/Views/User/Index.cshtml' was found in 6.3535ms.
+2024-07-16 23:03:08.934 +09:00 [DBG] View lookup cache miss for view '_Layout' in controller 'User'.
+2024-07-16 23:03:08.957 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[User])
+2024-07-16 23:03:08.961 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in  and 
+2024-07-16 23:03:08.964 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /
+2024-07-16 23:03:08.966 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[User])
+2024-07-16 23:03:08.967 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in  and 
+2024-07-16 23:03:08.969 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /
+2024-07-16 23:03:08.971 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[User])
+2024-07-16 23:03:08.972 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in /User/Privacy and 
+2024-07-16 23:03:08.973 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /User/Privacy
+2024-07-16 23:03:08.975 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2024-07-16 23:03:08.976 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2024-07-16 23:03:08.978 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /Home/Privacy
+2024-07-16 23:03:08.992 +09:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-07-16 23:03:08.999 +09:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-07-16 23:03:09.003 +09:00 [INF] Executed ViewResult - view Index executed in 98.6242ms.
+2024-07-16 23:03:09.005 +09:00 [INF] Executed action ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web) in 108.8892ms
+2024-07-16 23:03:09.006 +09:00 [INF] Executed endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)'
+2024-07-16 23:03:09.008 +09:00 [INF] HTTP GET / responded 200 in 163.7000 ms
+2024-07-16 23:03:09.013 +09:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-07-16 23:03:09.014 +09:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-07-16 23:03:09.016 +09:00 [DBG] Connection id "0HN55K02G377I" completed keep alive response.
+2024-07-16 23:03:09.019 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-16 23:03:09.021 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 269.0625ms
+2024-07-16 23:03:09.023 +09:00 [DBG] Connection id "0HN55K02G377J" completed keep alive response.
+2024-07-16 23:03:09.028 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 8.4259ms
+2024-07-16 23:03:09.070 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-07-16 23:03:09.096 +09:00 [DBG] Connection id "0HN55K02G377J" completed keep alive response.
+2024-07-16 23:03:09.097 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.8635ms
+2024-07-16 23:03:10.889 +09:00 [DBG] Connection id "0HN55K02G377I" received FIN.
+2024-07-16 23:03:10.890 +09:00 [DBG] Connection id "0HN55K02G377J" reset.
+2024-07-16 23:03:10.892 +09:00 [DBG] Connection id "0HN55K02G377I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:03:10.894 +09:00 [DBG] Connection id "0HN55K02G377J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:03:10.895 +09:00 [DBG] Connection id "0HN55K02G377I" disconnecting.
+2024-07-16 23:03:10.897 +09:00 [DBG] Connection id "0HN55K02G377J" disconnecting.
+2024-07-16 23:03:10.900 +09:00 [DBG] Connection id "0HN55K02G377I" stopped.
+2024-07-16 23:03:10.903 +09:00 [DBG] Connection id "0HN55K02G377J" stopped.
+2024-07-16 23:03:37.044 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2024-07-16 23:03:37.067 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'.
+2024-07-16 23:03:37.072 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/User/Index.cshtml'.
+2024-07-16 23:03:37.074 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/User/Privacy.cshtml'.
+2024-07-16 23:03:37.075 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2024-07-16 23:03:37.077 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2024-07-16 23:03:37.078 +09:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2024-07-16 23:03:37.083 +09:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-07-16 23:03:37.120 +09:00 [DBG] Hosting starting
+2024-07-16 23:03:37.136 +09:00 [INF] User profile is available. Using 'C:\Users\kagak\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 23:03:37.142 +09:00 [DBG] Reading data from file 'C:\Users\kagak\AppData\Local\ASP.NET\DataProtection-Keys\key-b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06.xml'.
+2024-07-16 23:03:37.154 +09:00 [DBG] Found key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06}.
+2024-07-16 23:03:37.160 +09:00 [DBG] Considering key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06} with expiration date 2024-10-14 12:42:52Z as default key.
+2024-07-16 23:03:37.163 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 23:03:37.165 +09:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-07-16 23:03:37.167 +09:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 23:03:37.171 +09:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-07-16 23:03:37.172 +09:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-07-16 23:03:37.186 +09:00 [DBG] Using key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06} as the default key.
+2024-07-16 23:03:37.187 +09:00 [DBG] Key ring with default key {b36967a8-a3d1-4d3b-bfd9-0b33a1bf5d06} was loaded during application startup.
+2024-07-16 23:03:37.252 +09:00 [INF] Now listening on: http://localhost:5175
+2024-07-16 23:03:37.254 +09:00 [DBG] Loaded hosting startup assembly ASUCloud.Web
+2024-07-16 23:03:37.258 +09:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-07-16 23:03:37.260 +09:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-07-16 23:03:37.261 +09:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 23:03:37.262 +09:00 [INF] Hosting environment: Development
+2024-07-16 23:03:37.265 +09:00 [INF] Content root path: C:\Users\kagak\source\repos\ASUUserService\src\ASUCloud\ASUCloud.Web
+2024-07-16 23:03:37.267 +09:00 [DBG] Hosting started
+2024-07-16 23:03:37.615 +09:00 [DBG] Connection id "0HN55K0BD9AUM" received FIN.
+2024-07-16 23:03:37.615 +09:00 [DBG] Connection id "0HN55K0BD9AUN" received FIN.
+2024-07-16 23:03:37.627 +09:00 [DBG] Connection id "0HN55K0BD9AUM" accepted.
+2024-07-16 23:03:37.627 +09:00 [DBG] Connection id "0HN55K0BD9AUN" accepted.
+2024-07-16 23:03:37.629 +09:00 [DBG] Connection id "0HN55K0BD9AUM" started.
+2024-07-16 23:03:37.631 +09:00 [DBG] Connection id "0HN55K0BD9AUN" started.
+2024-07-16 23:03:37.636 +09:00 [DBG] Connection id "0HN55K0BD9AUM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:03:37.636 +09:00 [DBG] Connection id "0HN55K0BD9AUN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:03:37.640 +09:00 [DBG] Connection id "0HN55K0BD9AUM" disconnecting.
+2024-07-16 23:03:37.640 +09:00 [DBG] Connection id "0HN55K0BD9AUN" disconnecting.
+2024-07-16 23:03:37.646 +09:00 [DBG] Connection id "0HN55K0BD9AUN" stopped.
+2024-07-16 23:03:37.646 +09:00 [DBG] Connection id "0HN55K0BD9AUM" stopped.
+2024-07-16 23:03:39.413 +09:00 [DBG] Connection id "0HN55K0BD9AUO" accepted.
+2024-07-16 23:03:39.414 +09:00 [DBG] Connection id "0HN55K0BD9AUO" started.
+2024-07-16 23:03:39.418 +09:00 [DBG] Connection id "0HN55K0BD9AUP" accepted.
+2024-07-16 23:03:39.420 +09:00 [DBG] Connection id "0HN55K0BD9AUP" started.
+2024-07-16 23:03:39.435 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2024-07-16 23:03:39.508 +09:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-07-16 23:03:39.513 +09:00 [DBG] The request path / does not match a supported file type
+2024-07-16 23:03:39.524 +09:00 [DBG] 1 candidate(s) found for the request path '/'
+2024-07-16 23:03:39.528 +09:00 [DBG] Endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)' with route pattern '{controller=User}/{action=Index}/{id?}' is valid for the request path '/'
+2024-07-16 23:03:39.530 +09:00 [DBG] Request matched endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)'
+2024-07-16 23:03:39.533 +09:00 [INF] Executing endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)'
+2024-07-16 23:03:39.556 +09:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASUCloud.Web.Controllers.UserController (ASUCloud.Web).
+2024-07-16 23:03:39.559 +09:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-16 23:03:39.561 +09:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-07-16 23:03:39.562 +09:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2024-07-16 23:03:39.564 +09:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-16 23:03:39.565 +09:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-07-16 23:03:39.568 +09:00 [DBG] Executing controller factory for controller ASUCloud.Web.Controllers.UserController (ASUCloud.Web)
+2024-07-16 23:03:39.571 +09:00 [DBG] Executed controller factory for controller ASUCloud.Web.Controllers.UserController (ASUCloud.Web)
+2024-07-16 23:03:39.573 +09:00 [DBG] test for webapp
+2024-07-16 23:03:39.578 +09:00 [DBG] View lookup cache miss for view 'Index' in controller 'User'.
+2024-07-16 23:03:39.582 +09:00 [INF] Executing ViewResult, running view Index.
+2024-07-16 23:03:39.585 +09:00 [DBG] The view path '/Views/User/Index.cshtml' was found in 6.2536ms.
+2024-07-16 23:03:39.607 +09:00 [DBG] View lookup cache miss for view '_Layout' in controller 'User'.
+2024-07-16 23:03:39.634 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[User])
+2024-07-16 23:03:39.637 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in  and 
+2024-07-16 23:03:39.640 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /
+2024-07-16 23:03:39.642 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Index],controller=[User])
+2024-07-16 23:03:39.644 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in  and 
+2024-07-16 23:03:39.645 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /
+2024-07-16 23:03:39.647 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[User])
+2024-07-16 23:03:39.649 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in /User/Privacy and 
+2024-07-16 23:03:39.650 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /User/Privacy
+2024-07-16 23:03:39.654 +09:00 [DBG] Found the endpoints ["Route: {controller=User}/{action=Index}/{id?}"] for address (area=[],action=[Privacy],controller=[Home])
+2024-07-16 23:03:39.655 +09:00 [DBG] Successfully processed template {controller=User}/{action=Index}/{id?} for Route: {controller=User}/{action=Index}/{id?} resulting in /Home/Privacy and 
+2024-07-16 23:03:39.657 +09:00 [DBG] Link generation succeeded for endpoints ["Route: {controller=User}/{action=Index}/{id?}"] with result /Home/Privacy
+2024-07-16 23:03:39.664 +09:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-07-16 23:03:39.668 +09:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-07-16 23:03:39.671 +09:00 [INF] Executed ViewResult - view Index executed in 94.2126ms.
+2024-07-16 23:03:39.673 +09:00 [INF] Executed action ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web) in 106.6548ms
+2024-07-16 23:03:39.675 +09:00 [INF] Executed endpoint 'ASUCloud.Web.Controllers.UserController.Index (ASUCloud.Web)'
+2024-07-16 23:03:39.677 +09:00 [INF] HTTP GET / responded 200 in 160.0297 ms
+2024-07-16 23:03:39.678 +09:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-07-16 23:03:39.680 +09:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-07-16 23:03:39.682 +09:00 [DBG] Connection id "0HN55K0BD9AUO" completed keep alive response.
+2024-07-16 23:03:39.686 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 254.2404ms
+2024-07-16 23:03:39.691 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-16 23:03:39.695 +09:00 [DBG] Connection id "0HN55K0BD9AUO" completed keep alive response.
+2024-07-16 23:03:39.696 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 5.1823ms
+2024-07-16 23:03:39.730 +09:00 [INF] Request starting HTTP/1.1 GET http://localhost:5175/_vs/browserLink - null null
+2024-07-16 23:03:39.755 +09:00 [DBG] Connection id "0HN55K0BD9AUO" completed keep alive response.
+2024-07-16 23:03:39.758 +09:00 [INF] Request finished HTTP/1.1 GET http://localhost:5175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.8439ms
+2024-07-16 23:03:42.437 +09:00 [DBG] Connection id "0HN55K0BD9AUO" received FIN.
+2024-07-16 23:03:42.438 +09:00 [DBG] Connection id "0HN55K0BD9AUP" reset.
+2024-07-16 23:03:42.440 +09:00 [DBG] Connection id "0HN55K0BD9AUO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:03:42.440 +09:00 [DBG] Connection id "0HN55K0BD9AUP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 23:03:42.441 +09:00 [DBG] Connection id "0HN55K0BD9AUO" disconnecting.
+2024-07-16 23:03:42.446 +09:00 [DBG] Connection id "0HN55K0BD9AUP" disconnecting.
+2024-07-16 23:03:42.447 +09:00 [DBG] Connection id "0HN55K0BD9AUO" stopped.
+2024-07-16 23:03:42.447 +09:00 [DBG] Connection id "0HN55K0BD9AUP" stopped.
