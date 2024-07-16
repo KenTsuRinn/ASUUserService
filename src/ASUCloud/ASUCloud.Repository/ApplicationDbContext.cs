@@ -15,18 +15,10 @@ namespace ASUCloud.Repository
         public DbSet<BlackIP> BlackIPs { get; set; }
         public DbSet<BlackUser> BlackUsers { get; set; }
 
-        private string _connectionString { get; set; }
-
-        public ApplicationDbContext(string connectionString)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-            _connectionString = connectionString;
+            this.Database.EnsureCreated();
         }
-
-        // The following configures EF to create a Sqlite database file in the
-        // special "local" folder for your platform.
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlite(_connectionString);
-
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

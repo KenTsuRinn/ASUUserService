@@ -14,19 +14,22 @@ namespace ASUCloud.Service.IntegratedTest
     [TestClass]
     public class BlackIPCacheTest
     {
-        private ApplicationDbContext _context;
         private BlackIPRepository _blackIPRepository;
         private BlackIPCache _blackIPCache;
+        private ApplicationDbContext _context;
 
         [TestInitialize]
         public void Initialize()
         {
             string connectionString = $"Data Source = test_{Guid.NewGuid()}.sqlite3";
-            ApplicationDbContext context = new ApplicationDbContext(connectionString);
-            context.Database.EnsureCreated();
-            _context = context;
 
-            BlackIPRepository blackIPRepository = new BlackIPRepository(context);
+            DbContextOptions<ApplicationDbContext> options = new DbContextOptionsBuilder<ApplicationDbContext>()
+               .UseSqlite(connectionString: connectionString)
+               .Options;
+
+            _context = new ApplicationDbContext(options);
+
+            BlackIPRepository blackIPRepository = new BlackIPRepository(options);
             _blackIPRepository = blackIPRepository;
 
             ServiceCollection services = new ServiceCollection();
@@ -41,7 +44,6 @@ namespace ASUCloud.Service.IntegratedTest
         [TestCleanup]
         public void Cleanup()
         {
-            _context.Database.EnsureDeleted();
             _blackIPCache.Reset();
         }
 

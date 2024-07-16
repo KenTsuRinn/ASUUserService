@@ -1,4 +1,5 @@
 ﻿using ASUCloud.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,27 +10,33 @@ namespace ASUCloud.Repository
 {
     public class UserRepository
     {
-        private readonly ApplicationDbContext _context;
-        public UserRepository(ApplicationDbContext context)
+        private readonly DbContextOptions<ApplicationDbContext> _dbContextOptions;
+
+        public UserRepository(DbContextOptions<ApplicationDbContext> options)
         {
-            _context = context;
+            _dbContextOptions = options;
         }
 
         public Guid CreateUser(User user)
         {
-            _context.Users.Add(user);
-            _context.SaveChanges();
+            using ApplicationDbContext context = new ApplicationDbContext(_dbContextOptions);
+            context.Users.Add(user);
+            context.SaveChanges();
             return user.ID;
         }
 
         public User? Find(string username, string email)
         {
-            return _context.Users.Where(s => s.Name == username && s.Email == email).SingleOrDefault();
+            using ApplicationDbContext context = new ApplicationDbContext(_dbContextOptions);
+
+            return context.Users.Where(s => s.Name == username && s.Email == email).SingleOrDefault();
         }
 
         public User? FindById(Guid guid)
         {
-            return _context.Users.Where(s => s.ID == guid).SingleOrDefault();
+            using ApplicationDbContext context = new ApplicationDbContext(_dbContextOptions);
+
+            return context.Users.Where(s => s.ID == guid).SingleOrDefault();
         }
     }
 }

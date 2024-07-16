@@ -7,7 +7,6 @@ namespace ASUCloud.Service.IntegratedTest
     [TestClass]
     public class UserServiceTest
     {
-        private ApplicationDbContext _context;
         private UserRepository _userRepository;
         private UserService _userService;
 
@@ -15,11 +14,11 @@ namespace ASUCloud.Service.IntegratedTest
         public void Initialize()
         {
             string connectionString = $"Data Source = test_{Guid.NewGuid()}.sqlite3";
-            ApplicationDbContext context = new ApplicationDbContext(connectionString);
-            context.Database.EnsureCreated();
-            _context = context;
+            DbContextOptions<ApplicationDbContext> options = new DbContextOptionsBuilder<ApplicationDbContext>()
+               .UseSqlite(connectionString: connectionString)
+               .Options;
 
-            UserRepository userRepository = new UserRepository(context);
+            UserRepository userRepository = new UserRepository(options);
             _userRepository = userRepository;
             _userService = new UserService(userRepository, EventBus.Instance.Subscribe());
         }
@@ -27,7 +26,6 @@ namespace ASUCloud.Service.IntegratedTest
         [TestCleanup]
         public void Cleanup()
         {
-            _context.Database.EnsureDeleted();
         }
 
         [TestMethod]
