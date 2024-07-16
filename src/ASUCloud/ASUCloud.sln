@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASUCloud.Repository", "ASUCloud.Repository\ASUCloud.Repository.csproj", "{22673C73-2B1C-44D0-8AE8-AB1E8FB45831}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASUCloud.Repository.IntegratedTest", "ASUCloud.Repository.IntegratedTest\ASUCloud.Repository.IntegratedTest.csproj", "{84044401-F517-4B79-842E-157C709BE246}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASUCloud.Model", "ASUCloud.Model\ASUCloud.Model.csproj", "{0F074675-9F38-4374-8B8C-F5DD4AF7E94F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22673C73-2B1C-44D0-8AE8-AB1E8FB45831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22673C73-2B1C-44D0-8AE8-AB1E8FB45831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22673C73-2B1C-44D0-8AE8-AB1E8FB45831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22673C73-2B1C-44D0-8AE8-AB1E8FB45831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84044401-F517-4B79-842E-157C709BE246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84044401-F517-4B79-842E-157C709BE246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84044401-F517-4B79-842E-157C709BE246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84044401-F517-4B79-842E-157C709BE246}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F074675-9F38-4374-8B8C-F5DD4AF7E94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F074675-9F38-4374-8B8C-F5DD4AF7E94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F074675-9F38-4374-8B8C-F5DD4AF7E94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F074675-9F38-4374-8B8C-F5DD4AF7E94F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F796F09D-AD8E-424A-B7C2-1821A4C67439}
+	EndGlobalSection
+EndGlobal
