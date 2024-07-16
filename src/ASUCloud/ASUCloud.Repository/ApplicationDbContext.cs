@@ -12,22 +12,17 @@ namespace ASUCloud.Repository
 
         public DbSet<User> Users { get; set; }
 
-        public string DbPath { get; }
+        private string _connectionString { get; set; }
 
-        public ApplicationDbContext()
+        public ApplicationDbContext(string connectionString)
         {
-            string exeDir = AppDomain.CurrentDomain.BaseDirectory;
-            DirectoryInfo exeDirInfo = new DirectoryInfo(exeDir);
-            string projectDir = exeDirInfo.Parent.Parent.FullName;
-            DbPath = $@"{projectDir}\MigrationDb.sqlite3";
-
-            this.Database.EnsureCreated();
+            _connectionString = connectionString;
         }
 
         // The following configures EF to create a Sqlite database file in the
         // special "local" folder for your platform.
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlite($"Data Source={DbPath}");
+            => options.UseSqlite(_connectionString);
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

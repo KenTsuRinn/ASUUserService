@@ -5,12 +5,22 @@ namespace ASUCloud.Repository.IntegratedTest
     [TestClass]
     public class UserTest
     {
+        private ApplicationDbContext _context;
+        private string _connectionString;
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            string connectionString = $"Data Source = test_{Guid.NewGuid()}.sqlite3";
+            _connectionString = connectionString ;  
+            _context = new ApplicationDbContext(connectionString);
+            _context.Database.EnsureCreated();
+        }
+
         [TestMethod]
         public void CreateUser()
         {
-            using var db = new ApplicationDbContext();
-
-            db.Users.Add(new User
+            _context.Users.Add(new User
             {
                 ID = Guid.NewGuid(),
                 Name = "Test",
@@ -19,26 +29,35 @@ namespace ASUCloud.Repository.IntegratedTest
                 HasVerified = false,
                 Icon = "icon"
             });
-            db.SaveChanges();
+            _context.SaveChanges();
 
         }
 
         [TestMethod]
         public void UpdateUser()
         {
-            using var db = new ApplicationDbContext();
-            User? user = db.Users.Where(s => s.ID != null).FirstOrDefault();
+            _context.Users.Add(new User
+            {
+                ID = Guid.NewGuid(),
+                Name = "Test",
+                Email = "Test@gmail.com",
+                Password = "password",
+                HasVerified = false,
+                Icon = "icon"
+            });
+            _context.SaveChanges();
+
+            User? user = _context.Users.Where(s => s.ID != null).FirstOrDefault();
             user.Name = "Test1111";
             user.Email = "t4ew@gmai.com";
-            db.SaveChanges();
+            _context.SaveChanges();
         }
 
         [TestMethod]
         public void CheckNameEmailUniqueIndexTest()
         {
-            using var db = new ApplicationDbContext();
 
-            db.Users.Add(new User
+            _context.Users.Add(new User
             {
                 ID = Guid.NewGuid(),
                 Name = "Test1",
@@ -47,7 +66,7 @@ namespace ASUCloud.Repository.IntegratedTest
                 HasVerified = false,
                 Icon = "icon1"
             });
-            db.Users.Add(new User
+            _context.Users.Add(new User
             {
                 ID = Guid.NewGuid(),
                 Name = "Test1",
@@ -60,7 +79,7 @@ namespace ASUCloud.Repository.IntegratedTest
 
             DbUpdateException ex = Assert.ThrowsException<DbUpdateException>(() =>
             {
-                db.SaveChanges();
+                _context.SaveChanges();
             });
 
             Assert.AreEqual("SQLite Error 19: 'UNIQUE constraint failed: user.name, user.email'.", ex.InnerException.Message);
