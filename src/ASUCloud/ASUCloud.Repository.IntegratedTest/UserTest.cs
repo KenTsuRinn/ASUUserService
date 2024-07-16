@@ -12,9 +12,15 @@ namespace ASUCloud.Repository.IntegratedTest
         public void Initialize()
         {
             string connectionString = $"Data Source = test_{Guid.NewGuid()}.sqlite3";
-            _connectionString = connectionString ;  
+            _connectionString = connectionString;
             _context = new ApplicationDbContext(connectionString);
             _context.Database.EnsureCreated();
+        }
+
+        [TestCleanup]
+        public void Cleanup()
+        {
+            _context.Database.EnsureDeleted();
         }
 
         [TestMethod]
