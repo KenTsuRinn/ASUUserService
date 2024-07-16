@@ -31,6 +31,7 @@ namespace ASUCloud.Service
                 throw new ASUCloudException(ErrorCode.SERVER_ERROR_BUSINESS, ErrorMessage.INSERT_DUPLICATE_USER);
             }
 
+            //TODO: パスワードの暗号化保存
             Guid id = _userRepository.CreateUser(user);
             return id != default(Guid);
         }
