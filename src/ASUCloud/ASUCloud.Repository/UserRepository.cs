@@ -24,8 +24,12 @@ namespace ASUCloud.Repository
 
         public User? Find(string username, string email)
         {
-            return _context.Users.Where(s => s.Name == username && s.Email == email).FirstOrDefault();
+            return _context.Users.Where(s => s.Name == username && s.Email == email).SingleOrDefault();
         }
 
+        public User? FindById(Guid guid)
+        {
+            return _context.Users.Where(s => s.ID == guid).SingleOrDefault();
+        }
     }
 }
