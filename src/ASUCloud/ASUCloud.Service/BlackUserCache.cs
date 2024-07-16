@@ -10,7 +10,7 @@ namespace ASUCloud.Service
 {
     public class BlackUserCache
     {
-        private const string KEY = "asucloud:cache:_blacklist";
+        private const string KEY = "asucloud:cache:user_blacklist";
 
         private readonly IMemoryCache _memoryCache;
         private readonly BlackUserRepository _blackUserRepository;
