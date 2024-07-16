@@ -1,4 +1,4 @@
-﻿namespace ASUCloud.Repository
+﻿namespace ASUCloud.Model
 {
     public class User
     {

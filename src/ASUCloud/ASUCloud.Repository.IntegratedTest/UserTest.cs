@@ -1,3 +1,4 @@
+using ASUCloud.Model;
 using Microsoft.EntityFrameworkCore;
 
 namespace ASUCloud.Repository.IntegratedTest

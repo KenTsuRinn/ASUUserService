@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ASUCloud.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace ASUCloud.Repository
     {
 
         public DbSet<User> Users { get; set; }
+        public DbSet<BlackIP> BlackIPs { get; set; }
+        public DbSet<BlackUser> BlackUsers { get; set; }
 
         private string _connectionString { get; set; }
 
@@ -28,6 +31,8 @@ namespace ASUCloud.Repository
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new BlackIPConfiguration());
+            modelBuilder.ApplyConfiguration(new BlackUserConfiguration());
         }
     }
 }

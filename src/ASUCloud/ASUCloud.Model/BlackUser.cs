@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ASUCloud.Repository
+namespace ASUCloud.Model
 {
     public class BlackUser
     {
@@ -13,6 +13,5 @@ namespace ASUCloud.Repository
         public string Reason { get; set; }
         public DateTime CreatedTime { get; set; }
         public DateTime UpdatedTime { get; set; }
-
     }
 }
