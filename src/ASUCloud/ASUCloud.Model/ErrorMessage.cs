@@ -10,5 +10,6 @@ namespace ASUCloud.Model
     {
         public const string INSERT_DUPLICATE_USER = "ERROR: insert duplicate user into database.";
         public const string OUT_OF_SWITCH_RANGE = "ERROR: out of switch range.";
+        public const string VIEW_MODEL_BIND_FAILED = "ERROR: view model binding failed.";
     }
 }

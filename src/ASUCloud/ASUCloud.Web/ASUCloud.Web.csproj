@@ -19,4 +19,8 @@
     <ProjectReference Include="..\ASUCloud.Service\ASUCloud.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
+
 </Project>

@@ -17,12 +17,18 @@ namespace ASUCloud.Repository
             _dbContextOptions = options;
         }
 
-        public Guid CreateUser(User user)
+        public User CreateUser(User user)
         {
             using ApplicationDbContext context = new ApplicationDbContext(_dbContextOptions);
             context.Users.Add(user);
             context.SaveChanges();
-            return user.ID;
+            return user;
+        }
+
+        public User? FindByPwd(string username, string email, string password)
+        {
+            using ApplicationDbContext context = new ApplicationDbContext(_dbContextOptions);
+            return context.Users.Where(s => s.Name == username && s.Email == email && s.Password == password).SingleOrDefault();
         }
 
         public User? Find(string username, string email)

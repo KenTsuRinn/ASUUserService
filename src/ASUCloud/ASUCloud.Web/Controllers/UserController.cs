@@ -1,4 +1,5 @@
 using ASUCloud.Service;
+using ASUCloud.Web.Middleware;
 using ASUCloud.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -9,11 +10,13 @@ namespace ASUCloud.Web.Controllers
     {
         private readonly ILogger<UserController> _logger;
         private readonly UserService _userService;
+        private readonly SecurityService _securityService;
 
-        public UserController(ILogger<UserController> logger, UserService userService)
+        public UserController(ILogger<UserController> logger, UserService userService, SecurityService securityService)
         {
             _logger = logger;
             _userService = userService;
+            _securityService = securityService;
         }
 
         [HttpGet]
@@ -26,11 +29,20 @@ namespace ASUCloud.Web.Controllers
         [HttpPost]
         public IActionResult Login(LoginUserViewModel loginUser)
         {
+            throw new NotImplementedException();
             ModelState.Clear();
             if (!TryValidateModel(loginUser))
             {
                 return View("Index", loginUser);
             }
+
+            Model.User user = loginUser.ToDomainUser();
+            user.Password = _securityService.GeneratePasswordHashPBKDF2(user.Password);
+
+            Model.User? found = _userService.FindUser(user);
+
+            if (found == null)
+                return View("Index", loginUser);
 
             return View();
         }
@@ -50,7 +62,11 @@ namespace ASUCloud.Web.Controllers
                 return View("Register", registerUser);
             }
 
-            return View();
+            Model.User user = registerUser.ToDomainUser();
+            user.Password = _securityService.GeneratePasswordHashPBKDF2(user.Password);
+            Model.User created = _userService.CreateUser(user);
+
+            return View("Details", created.ToViewModel());
         }
 
         public IActionResult Privacy()
