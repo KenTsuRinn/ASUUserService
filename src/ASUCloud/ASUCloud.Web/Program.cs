@@ -1,9 +1,12 @@
 using ASUCloud.Repository;
 using ASUCloud.Service;
 using ASUCloud.Web.Middleware;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using System.Text;
 
 namespace ASUCloud.Web
 {
@@ -25,12 +28,30 @@ namespace ASUCloud.Web
                .Options;
 
             builder.Services.AddSingleton<DbContextOptions<ApplicationDbContext>>(options);
+            builder.Services.AddSingleton<TokenService>();
             builder.Services.AddSingleton<SecurityService>();
             builder.Services.AddSingleton<UserService>();
             builder.Services.AddSingleton<UserRepository>();
             builder.Services.AddSingleton<EventBus>(EventBus.Instance.Subscribe());
             builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
             builder.Services.AddProblemDetails();
+
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters =
+                    new TokenValidationParameters
+                    {
+                        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                        ValidAudience = builder.Configuration["Jwt:Audience"],
+                        IssuerSigningKey = new SymmetricSecurityKey
+                            (Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = false,
+                        ValidateIssuerSigningKey = true
+                    };
+                });
 
             var app = builder.Build();
 
@@ -49,6 +70,7 @@ namespace ASUCloud.Web
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(
