@@ -1,4 +1,5 @@
 ﻿using ASUCloud.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,8 +19,11 @@ namespace ASUCloud.Repository.IntegratedTest
         public void Initialize()
         {
             string connectionString = $"Data Source = test_{Guid.NewGuid()}.sqlite3";
-            _connectionString = connectionString;
-            _context = new ApplicationDbContext(connectionString);
+            DbContextOptions<ApplicationDbContext> options = new DbContextOptionsBuilder<ApplicationDbContext>()
+               .UseSqlite(connectionString: connectionString)
+               .Options;
+
+            _context = new ApplicationDbContext(options);
             _context.Database.EnsureCreated();
         }
 

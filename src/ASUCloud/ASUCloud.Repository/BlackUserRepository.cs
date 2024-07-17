@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,15 +9,18 @@ namespace ASUCloud.Repository
 {
     public class BlackUserRepository
     {
-        private readonly ApplicationDbContext _context;
-        public BlackUserRepository(ApplicationDbContext context)
+        private readonly DbContextOptions<ApplicationDbContext> _dbContextOptions;
+
+        public BlackUserRepository(DbContextOptions<ApplicationDbContext> options)
         {
-            _context = context;
+            _dbContextOptions = options;
         }
 
         public IList<string> GetBlackUserIdList()
         {
-            return _context.BlackUsers.Select(s => s.UserID.ToString()).ToList();
+            using ApplicationDbContext context = new ApplicationDbContext(_dbContextOptions);
+
+            return context.BlackUsers.Select(s => s.UserID.ToString()).ToList();
         }
     }
 }

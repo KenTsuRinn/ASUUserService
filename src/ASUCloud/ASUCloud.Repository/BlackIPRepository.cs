@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,15 +9,18 @@ namespace ASUCloud.Repository
 {
     public class BlackIPRepository
     {
-        private readonly ApplicationDbContext _context;
-        public BlackIPRepository(ApplicationDbContext context)
+        private readonly DbContextOptions<ApplicationDbContext> _dbContextOptions;
+
+        public BlackIPRepository(DbContextOptions<ApplicationDbContext> options)
         {
-            _context = context;
+            _dbContextOptions = options;
         }
 
         public IList<string> GetBlackIPList()
         {
-            return _context.BlackIPs.Select(s => s.IP).ToList();
+            using ApplicationDbContext context = new ApplicationDbContext(_dbContextOptions);
+
+            return context.BlackIPs.Select(s => s.IP).ToList();
         }
     }
 }

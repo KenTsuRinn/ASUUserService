@@ -1,0 +1,45 @@
+﻿@model UserDetailViewModel
+@{
+    ViewData["Title"] = "サインイン";
+}
+
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title text-center">ASUサービスにサインイン</h3>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="text" class="form-label" asp-for="ID">ID</label>
+                            <input type="text" class="form-control" id="name" value="@Model.ID">
+                        </div>
+                        <div class="mb-3">
+                            <label for="text" class="form-label" asp-for="Name">名前</label>
+                            <input type="text" class="form-control" id="name" value="@Model.Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label" asp-for="Email">メールアドレス</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" value="@Model.Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="text" class="form-label" asp-for="CreatedTime">作成時間</label>
+                            <input type="text" class="form-control" id="created" value="@Model.CreatedTime">
+                        </div>
+                        <div class="mb-3">
+                            <label for="text" class="form-label" asp-for="UpdatedTime">更新時間</label>
+                            <input type="text" class="form-control" id="updated" value="@Model.UpdatedTime">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

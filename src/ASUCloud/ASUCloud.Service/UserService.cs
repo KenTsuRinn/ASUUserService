@@ -15,7 +15,12 @@ namespace ASUCloud.Service
             _eventBus = eventBus;
         }
 
-        public bool CreateUser(User user)
+        public User? FindUser(User user)
+        {
+            return _userRepository.FindByPwd(user.Name, user.Email, user.Password);
+        }
+
+        public User CreateUser(User user)
         {
             //重複登録は防止する
             User? existed = _userRepository.Find(user.Name, user.Email);
@@ -31,8 +36,7 @@ namespace ASUCloud.Service
                 throw new ASUCloudException(ErrorCode.SERVER_ERROR_BUSINESS, ErrorMessage.INSERT_DUPLICATE_USER);
             }
 
-            Guid id = _userRepository.CreateUser(user);
-            return id != default(Guid);
+            return _userRepository.CreateUser(user);
         }
 
         public User GetUserById(Guid id)

@@ -1,5 +1,6 @@
 ﻿using ASUCloud.Model;
 using ASUCloud.Repository;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -21,11 +22,15 @@ namespace ASUCloud.Service.IntegratedTest
         public void Initialize()
         {
             string connectionString = $"Data Source = test_{Guid.NewGuid()}.sqlite3";
-            ApplicationDbContext context = new ApplicationDbContext(connectionString);
+            DbContextOptions<ApplicationDbContext> options = new DbContextOptionsBuilder<ApplicationDbContext>()
+               .UseSqlite(connectionString: connectionString)
+               .Options;
+
+            ApplicationDbContext context = new ApplicationDbContext(options);
             context.Database.EnsureCreated();
             _context = context;
 
-            BlackUserRepository blackIPRepository = new BlackUserRepository(context);
+            BlackUserRepository blackIPRepository = new BlackUserRepository(options);
             _blackUserRepository = blackIPRepository;
 
             ServiceCollection services = new ServiceCollection();

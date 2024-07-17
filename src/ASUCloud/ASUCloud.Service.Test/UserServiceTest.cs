@@ -7,7 +7,6 @@ namespace ASUCloud.Service.IntegratedTest
     [TestClass]
     public class UserServiceTest
     {
-        private ApplicationDbContext _context;
         private UserRepository _userRepository;
         private UserService _userService;
 
@@ -15,11 +14,11 @@ namespace ASUCloud.Service.IntegratedTest
         public void Initialize()
         {
             string connectionString = $"Data Source = test_{Guid.NewGuid()}.sqlite3";
-            ApplicationDbContext context = new ApplicationDbContext(connectionString);
-            context.Database.EnsureCreated();
-            _context = context;
+            DbContextOptions<ApplicationDbContext> options = new DbContextOptionsBuilder<ApplicationDbContext>()
+               .UseSqlite(connectionString: connectionString)
+               .Options;
 
-            UserRepository userRepository = new UserRepository(context);
+            UserRepository userRepository = new UserRepository(options);
             _userRepository = userRepository;
             _userService = new UserService(userRepository, EventBus.Instance.Subscribe());
         }
@@ -27,7 +26,6 @@ namespace ASUCloud.Service.IntegratedTest
         [TestCleanup]
         public void Cleanup()
         {
-            _context.Database.EnsureDeleted();
         }
 
         [TestMethod]
@@ -35,7 +33,7 @@ namespace ASUCloud.Service.IntegratedTest
         {
             string name = "Test";
             string email = "test@gmail.com";
-            bool result = _userService.CreateUser(new Model.User
+            User result = _userService.CreateUser(new Model.User
             {
                 Name = name,
                 Email = email,
@@ -44,9 +42,9 @@ namespace ASUCloud.Service.IntegratedTest
                 Password = "fjioewjfoew"
             });
 
-            Assert.IsTrue(result);
+            Assert.IsNotNull(result);
 
-            Model.User? user = _userRepository.Find(name, email);
+            Model.User? user = _userRepository.FindById(result.ID);
             Assert.IsNotNull(user);
 
         }
@@ -58,7 +56,7 @@ namespace ASUCloud.Service.IntegratedTest
             string name = "Test";
             string email = "test@gmail.com";
 
-            bool result = _userService.CreateUser(new Model.User
+            User result = _userService.CreateUser(new Model.User
             {
                 Name = name,
                 Email = email,
@@ -67,7 +65,7 @@ namespace ASUCloud.Service.IntegratedTest
                 Password = "fjioewjfoew"
             });
 
-            Assert.IsTrue(result);
+            Assert.IsNotNull(result);
 
             ASUCloudException ex = Assert.ThrowsException<ASUCloudException>(() =>
             {

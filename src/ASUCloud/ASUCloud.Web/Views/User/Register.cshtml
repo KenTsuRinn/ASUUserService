@@ -1,0 +1,50 @@
+﻿@model RegisterUserViewModel
+@{
+    ViewData["Title"] = "アカウント登録";
+}
+
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title text-center">ASUサービスのアカウントを作成</h3>
+                </div>
+                <div class="card-body">
+                    <form method="post" autocomplete="off">
+                        <div class="mb-3">
+                            <label for="email" class="form-label" asp-for="Name">ユーザー名</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="nameHelp" required asp-for="Name">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label" asp-for="Email">メールアドレス</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required asp-for="Email">
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label" asp-for="Password">パスワード</label>
+                            <input type="password" class="form-control" id="password" required asp-for="Password">
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label" asp-for="ConfirmPassword">確認パスワード</label>
+                            <input type="password" class="form-control" id="confirmPassword" required asp-for="ConfirmPassword">
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <input name="__RequestVerificationToken" type="hidden" value="<removed for brevity>">
+                            <button type="submit" class="btn btn-primary" asp-action="RegisterSubmit">アカウント登録</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="button" class="btn btn-link" onclick="location.href='@Url.Action("Index","User")'">すでにアカウントをお持ちですか？</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
