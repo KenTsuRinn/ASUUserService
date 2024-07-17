@@ -16,14 +16,40 @@ namespace ASUCloud.Web.Controllers
             _userService = userService;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             _logger.LogDebug("test for webapp");
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Login(LoginUserViewModel loginUser)
+        {
+            ModelState.Clear();
+            if (!TryValidateModel(loginUser))
+            {
+                return View("Index", loginUser);
+            }
+
+            return View();
+        }
+
+        [HttpGet]
         public IActionResult Register()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult RegisterSubmit(RegisterUserViewModel registerUser)
+        {
+            ModelState.Clear();
+            if (!TryValidateModel(registerUser))
+            {
+                return View("Register", registerUser);
+            }
+
             return View();
         }
 
