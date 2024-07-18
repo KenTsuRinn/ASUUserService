@@ -15,12 +15,13 @@ namespace ASUCloud.Service
 
         private string GenerateSalt()
         {
-            var buff = new byte[SALT_SIZE];
-            using (var rng = new RNGCryptoServiceProvider())
-            {
-                rng.GetBytes(buff);
-            }
-            return Convert.ToBase64String(buff);
+            return "SECERITY";
+            //var buff = new byte[SALT_SIZE];
+            //using (var rng = new RNGCryptoServiceProvider())
+            //{
+            //    rng.GetBytes(buff);
+            //}
+            //return Convert.ToBase64String(buff);
         }
 
         private string GeneratePasswordHashPBKDF2(string password, string salt)

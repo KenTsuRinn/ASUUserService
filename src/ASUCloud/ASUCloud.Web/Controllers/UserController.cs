@@ -63,7 +63,6 @@ namespace ASUCloud.Web.Controllers
         [HttpPost]
         public IActionResult Login(LoginUserViewModel loginUser)
         {
-            throw new NotImplementedException();
             ModelState.Clear();
             if (!TryValidateModel(loginUser))
             {
@@ -78,7 +77,7 @@ namespace ASUCloud.Web.Controllers
             if (found == null)
                 return View("Index", loginUser);
 
-            return View();
+            return View("Details", found.ToViewModel());
         }
 
         [HttpGet]

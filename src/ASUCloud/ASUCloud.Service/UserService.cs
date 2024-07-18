@@ -17,7 +17,7 @@ namespace ASUCloud.Service
 
         public User? FindUser(User user)
         {
-            return _userRepository.FindByPwd(user.Name, user.Email, user.Password);
+            return _userRepository.FindByPwd(user.Email, user.Password);
         }
 
         public User CreateUser(User user)

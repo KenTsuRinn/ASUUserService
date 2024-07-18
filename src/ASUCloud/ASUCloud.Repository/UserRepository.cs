@@ -25,10 +25,10 @@ namespace ASUCloud.Repository
             return user;
         }
 
-        public User? FindByPwd(string username, string email, string password)
+        public User? FindByPwd(string email, string password)
         {
             using ApplicationDbContext context = new ApplicationDbContext(_dbContextOptions);
-            return context.Users.Where(s => s.Name == username && s.Email == email && s.Password == password).SingleOrDefault();
+            return context.Users.Where(s => s.Email == email && s.Password == password).SingleOrDefault();
         }
 
         public User? Find(string username, string email)
